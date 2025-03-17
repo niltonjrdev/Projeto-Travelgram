@@ -14,4 +14,5 @@ main img {
 
 main img:hover {
     border: 3px solid var(--brand-color);
+
 }
