@@ -6,8 +6,9 @@ main {
 }
 
 main img {
-    width: 286px;
-    height: 286px;
+    width: 100%;
+    max-width: 286px;
+    height: auto;
     object-fit: cover;
 
 }
@@ -15,4 +16,17 @@ main img {
 main img:hover {
     border: 3px solid var(--brand-color);
 
+}
+
+@media (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    main img {
+        max-width: 100%;
+        width: auto;
+    }
 }

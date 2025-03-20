@@ -26,11 +26,9 @@ header .container {
 
 #info {
     list-style: none;
-
     display: flex;
     flex-direction: column;
     gap: 16px;
-
     width: 280px;
 }
 
@@ -43,4 +41,36 @@ header .container {
 #profile img {
     border: 3px solid var(--brand-color);
     border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    #profile>div {
+        max-width: none;
+        text-align: center;
+    }
+
+    #info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+        width: auto;
+    }
+
+    #info li {
+        flex-direction: column;
+        align-items: center;
+    }
 }
